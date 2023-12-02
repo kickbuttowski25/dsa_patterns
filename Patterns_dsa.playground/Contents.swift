@@ -2,8 +2,8 @@ import UIKit
 
 // MARK: n * m patterns
 func pattern1(n: Int, m: Int) {
-    for i in 0..<n {
-        for j in 0..<m {
+    for _ in 0..<n {
+        for _ in 0..<m {
             print("*", terminator: "")
         }
     print(separator: " ")
@@ -11,4 +11,16 @@ func pattern1(n: Int, m: Int) {
     
 }
 
-pattern1(n: 2, m: 2)
+//pattern1(n: 1, m: 8)
+
+//MARK: semi triangular pattern
+func rightPattern(n: Int) {
+    for i in  0..<n {
+        for _ in 0..<i + 1 {
+            print("*", terminator: "")
+        }
+        print(separator: " ")
+    }
+}
+
+rightPattern(n: 7)
